@@ -1,0 +1,11 @@
+{
+  "name": "pagina-ventas",
+  "version": "1.0.0",
+  "description": "Mi primera pagina",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "JhojansVelasquez",
+  "license": "ISC"
+}
