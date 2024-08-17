@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="/dist/img/iconos/css/fontello.css" />
+    <link rel="stylesheet" href="/dist/ext/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/src/client/css/nav.css" />
+    <link rel="stylesheet" href="/src/client/css/StyleProducto.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="nav-principal">
+        <div class="logo">
+          <h3>VentasOnlineF</h3>
+        </div>
+        <div class="search-bar">
+          <input
+            type="text"
+            placeholder="Buscar productos por nombre, código o categoría..."
+          />
+          <button type="submit">
+            <i class="icon-search"></i>
+          </button>
+        </div>
+        <div class="nav-icons">
+          <div class="carrito">
+            <a href="#compra"><i class="icon-basket"></i></a>
+            <div class="carrito-vista-previa">
+              <p>Tu carrito está vacío.</p>
+            </div>
+          </div>
+          <div class="login">
+            <a href="/src/client/html/login.html"><i class="icon-user"></i></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Contenido Principal -->
+    <main>
+      <section class="product-detail">
+        <div class="product-header">
+          <div class="breadcrumbs">
+            <a href="#">Videojuegos</a> / <a href="#">Juegos</a>
+          </div>
+          <h1 id="product-title">Minecraft PC</h1>
+          <span id="product-code" class="product-code">0000000</span>
+          <div id="product-rating" class="product-rating">
+            <span>⭐⭐⭐⭐☆</span>
+            <a href="#">43 Pulgadas</a>
+            <a href="#">Comparar producto</a>
+          </div>
+        </div>
+
+        <div class="product-body">
+          <div class="product-images">
+            <img
+              id="product-main-image"
+              src=""
+              alt="Producto Principal"
+            />
+            <div class="product-thumbnails">
+              <img id="thumb1" src="thumb1.jpg" alt="Thumb 1" />
+              <img id="thumb2" src="thumb2.jpg" alt="Thumb 2" />
+              <img id="thumb3" src="thumb3.jpg" alt="Thumb 3" />
+              <!-- Más thumbnails -->
+            </div>
+          </div>
+
+          <div class="product-info">
+            <div class="product-pricing">
+              <span id="product-price" class="product-price">$19.99</span>
+              <span id="product-old-price" class="product-old-price"
+                >$49.99</span
+              >
+              <button id="add-to-cart">Agregar al carrito</button>
+            </div>
+            <ul id="product-features" class="product-features">
+              <li>
+                CREA Crea lo que sea que puedas imaginar en tu propio mundo
+                infinito que es único cada vez que lo juegues.
+              </li>
+              <br />
+              <li>EXPLORA Descubre biomas, recursos y criaturas...</li>
+              <br />
+              <li>JUEGA EN COMPAÑÍA Diviértete con amigos...</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Tienda de Electrónica. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="/dist/ext/bootstrap/js/jquery.js"></script>
+    <script src="/dist/ext/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/src/client/js/scripts.js"></script>
+    <script src="/src/client/js/CambiodeP.js"></script>
+  </body>
+</html>

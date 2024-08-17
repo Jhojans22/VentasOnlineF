@@ -1,0 +1,152 @@
+
+header {
+    background-color: #333;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 1em 0;
+}
+
+.nav-principal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1em;
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0 1em;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 0.6em;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+}
+
+.search-bar::placeholder{
+    width: 500px;
+    padding: 0;
+    
+}
+
+.search-bar button {
+    padding: 0.5em;
+    border: none;
+    background-color: #555;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.search-bar button{
+    font-size: 17px;   
+    color: white;
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+}
+
+.nav-icons .carrito, .nav-icons .login {
+    margin-left: 4em;    
+   
+}
+
+.nav-icons i{
+    font-size: 25px;
+    color: white;
+}
+
+.carrito-vista-previa {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 1em;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.carrito:hover .carrito-vista-previa {
+    display: block;
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    .nav-principal {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-icons {
+        margin-top: 1em;
+    }
+
+    .search-bar {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    .search-bar input {
+        width: calc(100% - 100px);
+    }
+
+    .nav-icons .carrito, .nav-icons .login {
+        margin-left: 1em;    
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-principal {
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1em;
+    }
+
+    .nav-links li {
+        margin: 0.5em 0;
+    }
+
+    .search-bar input {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .nav-icons i {
+        font-size: 20px;
+    }
+}

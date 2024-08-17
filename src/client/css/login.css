@@ -1,0 +1,204 @@
+:root {
+    --body-bg: #c1bdba;
+    --form-bg: #13232f;
+    --blanco: #fff;
+    --color-principal: #1ab188;
+    --color-principal-light: #22b999;
+    --color-principal-dark: #17997a;
+    --gris-light: #a0b3b0;
+    --gris: #ddd;
+    --thin: 300;
+    --normal: 400;
+    --bold: 600;
+    --br: 4px;
+    --fuente-principal: "Ubuntu", helvetica;
+    --fuente-secundaria: "Raleway", arial;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--body-bg);
+    font-family: var(--fuente-principal);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-principal);
+    transition: .5s ease;
+}
+
+a:hover {
+    color: var(--color-principal-dark);
+}
+
+.contenedor-formularios {
+    background: rgba(19, 35, 47, .9);
+    padding: 40px;
+    max-width: 600px;
+    margin: 40px auto;
+    border-radius: var(--br);
+    box-shadow: 0 4px 10px 4px rgba(19, 35, 47, .3);
+}
+
+.contenedor-tabs {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 40px 0;
+}
+
+.contenedor-tabs:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.contenedor-tabs li a {
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+    background: rgba(160, 179, 176, .25);
+    color: var(--gris-light);
+    font-size: 20px;
+    float: left;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.contenedor-tabs li a:hover {
+    background: var(--color-principal-dark);
+    color: var(--blanco);
+}
+
+.contenedor-tabs .active a {
+    background: var(--color-principal);
+    color: var(--blanco);
+}
+
+.contenido-tab > div:last-child {
+    display: none;
+}
+
+h1 {
+    text-align: center;
+    color: var(--blanco);
+    font-weight: var(--thin);
+    margin: 0 0 40px;
+}
+
+label {
+    position: absolute;
+    transform: translateY(6px);
+    left: 13px;
+    color: rgba(255, 255, 255, 0.5);
+    transition: all 0.25s ease;
+    pointer-events: none;
+    font-size: 22px;
+}
+
+label.active, label.highlight {
+    transform: translateY(-20px);
+    left: 2px;
+    font-size: 14px;
+    color: var(--blanco);
+}
+
+input {
+    font-size: 22px;
+    display: block;
+    width: 100%;
+    padding: 10px 10px;
+    background: none;
+    border: 1px solid var(--gris-light);
+    color: var(--blanco);
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--color-principal);
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.contenedor-input {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.fila-arriba:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.fila-arriba div {
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+}
+
+.fila-arriba div:last-child { 
+    margin: 0;
+}
+
+.button {
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 15px 0;
+    font-size: 2rem;
+    background: var(--color-principal);
+    color: var(--blanco);
+    transition: all .5s ease;    
+}
+
+.button:hover, .button:focus {
+    background: var(--color-principal-dark);
+}
+
+.button-block {
+    display: block;
+    width: 100%;
+}
+
+.forgot {
+    margin-top: -20px;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.volver {
+    background: rgba(0, 0, 0, 0.5); /* Un color de fondo distinto para diferenciarlo */
+    margin-top: 20px; /* Añade un margen para separarlo de los formularios */
+}
+
+
+@media screen and (max-width: 500px) {
+    .fila-arriba div {
+        width: 100%;
+    }
+
+    .fila-arriba div:last-child {
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .contenedor-tabs li a {
+        width: 100%;
+    }
+}

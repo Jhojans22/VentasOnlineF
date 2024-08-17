@@ -1,0 +1,130 @@
+/* Contenido principal */
+body {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    padding: 20px;
+    margin-top: 80px;
+}
+
+.product-detail {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-header {
+    margin-bottom: 20px;
+}
+
+.breadcrumbs a {
+    text-decoration: none;
+    color: #555;
+}
+
+.product-header h1 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.product-header .product-code {
+    font-size: 0.9em;
+    color: #777;
+}
+
+.product-header .product-rating {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.product-body {
+    display: flex;
+    gap: 20px;
+}
+
+.product-images {
+    flex: 1;
+}
+
+.product-images img {
+    width: 58%;
+    height: auto;
+    display: block;
+}
+
+.product-thumbnails {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.product-thumbnails img {
+    width: 60px;
+    height: auto;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.product-info {
+    flex: 1;
+}
+
+.product-pricing {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-direction: column;
+}
+
+.product-price {
+    font-size: 1.5em;
+    color: red;
+}
+
+.product-old-price {
+    font-size: 1em;
+    color: #777;
+    text-decoration: line-through;
+}
+
+.product-pricing button {
+    padding: 10px 20px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.product-features {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.product-features li {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .product-body {
+        flex-direction: column;
+    }
+}

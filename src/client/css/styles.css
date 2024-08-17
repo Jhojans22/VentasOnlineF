@@ -1,0 +1,155 @@
+/* Estilos globales */
+body {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;    
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-secundaria {
+    background-color: #f8f8f8;
+    padding: 1em 0;
+    margin-top: 60px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-categorias {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    padding-top: 1px;
+    margin: 0;
+}
+
+.nav-categorias li {
+    margin: 0 1em;
+}
+
+.nav-categorias li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 2em 1em;
+    margin-top: 10px; 
+}
+
+.productos {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.productos a {
+    text-decoration: none;
+}
+
+.productos p {
+    color: rgb(0, 0, 0);
+}
+
+.productos-container {
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    padding: 1em 0;
+    position: relative;
+}
+
+.productos-lista {
+    display: flex;
+    gap: 1em;
+    padding: 1em;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.producto {
+    flex: 0 0 auto;
+    width: 200px;
+    border: 1px solid #ddd;
+    padding: 1em;
+    border-radius: 4px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.producto p {
+    margin: 0.5em 0;
+}
+
+.scroll-btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 0.5em;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.left-btn {
+    left: 0;
+}
+
+.right-btn {
+    right: 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    .nav-categorias {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-categorias li {
+        margin: 0.5em 0;
+    }
+
+    .productos {
+        padding: 1em 0;
+    }
+
+    .productos-container {
+        flex-direction: column;
+    }
+
+    .producto {
+        width: 90%; /* Ocupa un mayor porcentaje del ancho */
+        margin: 0 auto; /* Centrar el producto */
+    }
+}
+
+@media (max-width: 480px) {
+    .producto {
+        width: 100%; /* Productos ocupan todo el ancho en móviles */
+    }
+
+    .scroll-btn {
+        display: none; /* Ocultar botones de desplazamiento en móviles */
+    }
+
+    footer {
+        font-size: 14px; /* Tamaño de fuente más pequeño en móviles */
+    }
+}

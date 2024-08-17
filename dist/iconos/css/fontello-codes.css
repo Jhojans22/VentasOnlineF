@@ -1,0 +1,12 @@
+
+.icon-user:before { content: '\e800'; } /* '' */
+.icon-basket:before { content: '\e801'; } /* '' */
+.icon-search:before { content: '\e802'; } /* '' */
+.icon-right-open:before { content: '\e803'; } /* '' */
+.icon-left-open:before { content: '\e804'; } /* '' */
+.icon-camera-outline:before { content: '\e805'; } /* '' */
+.icon-video:before { content: '\e806'; } /* '' */
+.icon-headphones:before { content: '\e807'; } /* '' */
+.icon-doc-text:before { content: '\f0f6'; } /* '' */
+.icon-gamepad:before { content: '\f11b'; } /* '' */
+.icon-help:before { content: '\f128'; } /* '' */
