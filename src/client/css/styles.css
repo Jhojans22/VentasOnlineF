@@ -4,11 +4,11 @@ body {
     font-style: normal;
     margin: 0;
     padding: 0;  
-    background-color: #393f52;  
+    background-color: #9ea68f;  
 }
 /*Banner*/
 .Ofertas-productos {
-    margin: 50px 0 0 200px;
+    margin: 50px 0px 50px 200px;
     width: 80%;
     height: 600px;
     display: flex;
@@ -16,92 +16,84 @@ body {
     gap: 10px;
 }
 
+.Ofertas-productos .producto {
+    position: relative;
+    width: 40%;   
+    transition: width 0.5s;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: #0a0b17;
+    border-radius: 20px;  
+
+}
+
 .Ofertas-productos img {
-    width: 10%;
+    width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover;     
+    transition: transform 0.5s, opacity 0.5s;    
+}
+
+.Ofertas-productos .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #9ea68f;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+    padding: 20px 0;
+    font-size: 20px;   
     border-radius: 10px;
-    border: 2px solid #ffffffad;
-    transition:0.5s;
 }
 
-.Ofertas-productos img:hover {
-    width: 25%;
-
+.Ofertas-productos .producto:hover img {    
+    opacity: 0.10; 
+    transform: scale(1.2);     
 }
 
-/*Seccion Categorias*/
-.selector {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;   
+.Ofertas-productos .producto:hover .overlay {
+    opacity: 1;
 }
 
-.selector ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 20px;
-}
-
-.selector ul li {
-    flex: 1;
-}
-
-.selector ul li a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
-    background-color: #ffffff;
-    border: 2px solid #e0e0e0;
-    border-radius: 10px;
-    padding: 20px;
-    transition: all 0.3s ease;
-    color: #333;
-    font-weight: bold;
-    font-size: 14px;
+.Ofertas-productos .producto {
     text-align: center;
 }
 
-.selector ul li a img {
-    max-width: 50px;
-    margin-bottom: 10px;
-    transition: transform 0.3s ease;
+
+
+/*Secciones */
+.ropa,.zapatos, .audifonos, .relojes {    
+    background-color:#0a0b17;
+    padding: 5px;
 }
 
-.selector ul li a:hover {
-    background-color: #00c6a7;
-    border-color: #00c6a7;
-    color: #ffffff;
+.ropa, .zapatos, .audifonos, .relojes, h1 {
+    color: #9ea68f;
+    font-size: 50px;
+    padding: 10px;
+    margin: 2px;
+    text-shadow: 0 10px 20px #ffffff1f;
 }
 
-.selector ul li a:hover img {
-    transform: scale(1.2);
-}
-
-.selector ul li a:hover span {
-    color: #ffffff;
-}
-/*Seccion Zapatos*/
-.zapatos {
+.ropa-productos, .zapatos-productos, .audifonos-productos, .relojes-productos {    
     display: flex;
     justify-content: center;
     gap: 10px;
+    padding: 50px;
 }
 
 /*Producto*/
 .producto-card {
-    background-color: #616161;
+    background-color: #9ea68f;
     border-radius: 15px;
     padding: 20px;
     width: 200px;
     text-align: center;
     position: relative;
-    color: #fff;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    color: #0a0b17;
+    box-shadow: 0 10px 20px#ffffff1f;
     transition: transform 0.3s ease;
 }
 
@@ -115,7 +107,7 @@ body {
     position: absolute;
     top: 10px;
     left: 10px;
-    color: #fff;
+    color:  #0a0b17;
     opacity: 0.1;
 }
 
@@ -124,7 +116,7 @@ body {
     text-transform: uppercase;
     margin-bottom: 15px;
     font-weight: bold;
-    color: #fff;
+    color: #0a0b17;
 }
 
 .producto-imge img {
@@ -141,7 +133,7 @@ body {
 
 .producto-precio {
     font-size: 18px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #0a0b17;
     padding: 5px 10px;
     border-radius: 15px;
     position: absolute;
@@ -158,8 +150,8 @@ body {
 
 
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #0a0b17;
+    color: #9ea68f;
     text-align: center;
     padding: 1em 0;
 }

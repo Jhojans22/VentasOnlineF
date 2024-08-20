@@ -1,46 +1,56 @@
-.contact-container {
-    max-width: 600px;
+body {
+    font-family: "Nunito", sans-serif;      
+    font-style: normal;
+    margin: 0;
+    padding: 0;  
+    background-color: #9ea68f;  
+}
+.contacto {
+    max-width: 500px;
     margin: 2rem auto;
     padding: 1.5rem;
-    background-color: #fff;
+    background-color:#0a0b17;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
 
 h1 {
     text-align: center;
-    color: #333;
+    color: #9ea68f;
 }
 
-.contact-form {
+.contacto-formulario {
     display: flex;
     flex-direction: column;
 }
 
-.contact-form label {
-    margin-bottom: 0.5rem;
-    color: #555;
+.contacto-formulario label {
+    margin: 10px;
+    color: #9ea68f;
 }
 
-.contact-form input,
-.contact-form textarea {
+.contacto-formulario input,
+.contacto-formulario textarea {
     margin-bottom: 1rem;
     padding: 0.8rem;
     border: 1px solid #ddd;
     border-radius: 4px;
     font-size: 1rem;
+    background-color:#9ea68f;
 }
 
-.contact-form button {
+.contacto-formulario button {
+    margin-top: 10px;   
     padding: 0.8rem;
-    background-color: #28a745;
-    color: #fff;
-    border: none;
+    background-color: #9ea68f;
+    color: #0a0b17;
+    border: 20px;
     border-radius: 4px;
+    font-family: "Nunito", sans-serif;
     font-size: 1rem;
     cursor: pointer;
 }
 
-.contact-form button:hover {
-    background-color: #218838;
+.contacto-formulario button:hover {
+    background-color:#b6c0a4;
 }

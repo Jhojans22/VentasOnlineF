@@ -44,104 +44,240 @@
     <main>
         <!--Seccion de destacados-->
         <section id="Ofertas-productos" class="Ofertas-productos">
-            <img src="/dist/img/Banner/img1.jpg" alt="Ropa">            
-            <img src="/dist/img/Banner/img3.jpg" alt="Zapatos">
-            <img src="/dist/img/Banner/img4.jpg" alt="Audifonos">
-            <img src="/dist/img/Banner/img2.jpg" alt="Relojes">
-            <img src="/dist/img/Banner/img5.jpg" alt="Contacto">
-           
+            <div class="producto">
+                <img src="/dist/img/Banner/img1.jpg" alt="Ropa">
+                <div class="overlay">
+                    <p>Ropa</p>
+                </div>
+            </div>
+            <div class="producto">
+                <img src="/dist/img/Banner/img3.jpg" alt="Zapatos">
+                <div class="overlay">
+                    <p>Zapatos</p>
+                </div>
+            </div>
+            <div class="producto">
+                <img src="/dist/img/Banner/img4.jpg" alt="Audífonos">
+                <div class="overlay">
+                    <p>Audífonos</p>
+                </div>
+            </div>
+            <div class="producto">
+                <img src="/dist/img/Banner/img2.jpg" alt="Relojes">
+                <div class="overlay">
+                    <p>Relojes</p>
+                </div>
+            </div>
+            <div class="producto">
+                <img src="/dist/img/Banner/img5.jpg" alt="Contacto">
+                <div class="overlay">
+                    <p>Contacto</p>
+                </div>
+            </div>
         </section>
+         
+        <br>
         
-        <section class="selector">                  
-            <ul class="selector">
-                <li>
-                    <a href="#categoria1"><img src="/dist/img/iconos/img/png/001-reloj-de-mano.png" alt="">Ropa</a>
-                </li>
-                <li>
-                    <a href="#categoria2"><img src="/dist/img/iconos/img/png/001-reloj-de-mano.png" alt="">Zapatos</a>
-                </li>
-                <li>
-                    <a href="#categoria3"><img src="/dist/img/iconos/img/png/001-reloj-de-mano.png" alt="">Audifonos</a>
-                </li>
-                <li>
-                    <a href="#categoria4"><img src="/dist/img/iconos/img/png/001-reloj-de-mano.png" alt="">Relojes</a>
-                </li>
-            </ul>              
-        </section>
+        <section id="ropa" class="ropa">
+            <h1>Ropa</h1>
 
-        <section id="zapatos" class="zapatos">
-
-            <div class="producto-card">
-                <div class="producto-numero">01</div>
-                <div class="producto-categoria">Sneakers</div>
-                <div class="producto-imge">
-                    <img src="/dist/img/Productos/zapato 1.png" alt="Nike Blue">
+            <div class="ropa-productos">
+                <div class="producto-card">
+                    <div class="producto-numero">01</div>
+                    <div class="producto-categoria">Sneakers</div>
+                    <div class="producto-imge">
+                        <img src="/dist/img/Productos/zapato1.png" alt="Nike Blue">
+                    </div>
+                    <div class="producto-precio">$400.000</div>
+                    <div class="producto-nombre">Nike Blue</div>
                 </div>
-                <div class="product-price">$400.000</div>
-                <div class="product-name">Nike Blue</div>
-            </div>
-
-            <div class="producto-card">
-                <div class="producto-numero">01</div>
-                <div class="producto-categoria">Sneakers</div>
-                <div class="producto-imge">
-                    <img src="/dist/img/Productos/zapato 1.png" alt="Nike Blue">
+    
+                <div class="producto-card">
+                    <div class="producto-numero">02</div>
+                    <div class="producto-categoria">Sneakers</div>
+                    <div class="producto-imge">
+                        <img src="/dist/img/Productos/zapato2.png" alt="Nike Red">
+                    </div>
+                    <div class="producto-precio">$420.000</div>
+                    <div class="producto-nombre">Nike Red</div>
                 </div>
-                <div class="product-price">$400.000</div>
-                <div class="product-name">Nike Blue</div>
-            </div>
-
-            <div class="producto-card">
-                <div class="producto-numero">01</div>
-                <div class="producto-categoria">Sneakers</div>
-                <div class="producto-imge">
-                    <img src="/dist/img/Productos/zapato 1.png" alt="Nike Blue">
+    
+                <div class="producto-card">
+                    <div class="producto-numero">03</div>
+                    <div class="producto-categoria">Sneakers</div>
+                    <div class="producto-imge">
+                        <img src="/dist/img/Productos/zapato3.png" alt="Nike Green">
+                    </div>
+                    <div class="producto-precio">$430.000</div>
+                    <div class="producto-nombre">Nike Green</div>
                 </div>
-                <div class="product-price">$400.000</div>
-                <div class="product-name">Nike Blue</div>
-            </div>
-
-            <div class="producto-card">
-                <div class="producto-numero">01</div>
-                <div class="producto-categoria">Sneakers</div>
-                <div class="producto-imge">
-                    <img src="/dist/img/Productos/zapato 1.png" alt="Nike Blue">
+    
+                <div class="producto-card">
+                    <div class="producto-numero">04</div>
+                    <div class="producto-categoria">Sneakers</div>
+                    <div class="producto-imge">
+                        <img src="/dist/img/Productos/zapato4.png" alt="Nike Black">
+                    </div>
+                    <div class="producto-precio">$450.000</div>
+                    <div class="producto-nombre">Nike Black</div>
                 </div>
-                <div class="producto-price">$400.000</div>
-                <div class="producto-name">Nike Blue</div>
             </div>
             
         </section>
-        
-        <!--Contacto-->
-        <section>
-            <div class="contact-container">
-                <h1>Contacto</h1>
-                <form action="enviar_contacto.php" method="post" class="contact-form">
-                    <label for="name">Nombre:</label>
-                    <input type="text" id="name" name="name" required>
-        
-                    <label for="email">Correo Electrónico:</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <!--Motivo del contacto-->
-        
-                    <label for="message">Mensaje:</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-        
-                    <button type="submit">Enviar</button>
-                </form>
-            </div>
+        <br>
+        <section id="zapatos" class="zapatos">
+            <h1>Zapatos</h1>
+            <div class="zapatos-productos">
+                <div class="producto-card">
+                    <div class="producto-numero">01</div>
+                    <div class="producto-categoria">Zapatos de vestir</div>
+                    <div class="producto-imge">
+                        <img src="/dist/img/Productos/zapato5.png" alt="Zapato Elegante">
+                    </div>
+                    <div class="producto-precio">$350.000</div>
+                    <div class="producto-nombre">Zapato Elegante</div>
+                </div>
+    
+                <div class="producto-card">
+                    <div class="producto-numero">02</div>
+                    <div class="producto-categoria">Zapatos de vestir</div>
+                    <div class="producto-imge">
+                        <img src="/dist/img/Productos/zapato6.png" alt="Zapato Casual">
+                    </div>
+                    <div class="producto-precio">$360.000</div>
+                    <div class="producto-nombre">Zapato Casual</div>
+                </div>
+    
+                <div class="producto-card">
+                    <div class="producto-numero">03</div>
+                    <div class="producto-categoria">Zapatos de vestir</div>
+                    <div class="producto-imge">
+                        <img src="/dist/img/Productos/zapato7.png" alt="Zapato Deportivo">
+                    </div>
+                    <div class="producto-precio">$370.000</div>
+                    <div class="producto-nombre">Zapato Deportivo</div>
+                </div>
+    
+                <div class="producto-card">
+                    <div class="producto-numero">04</div>
+                    <div class="producto-categoria">Zapatos de vestir</div>
+                    <div class="producto-imge">
+                        <img src="/dist/img/Productos/zapato8.png" alt="Zapato Moderno">
+                    </div>
+                    <div class="producto-precio">$380.000</div>
+                    <div class="producto-nombre">Zapato Moderno</div>
+                </div>
+            </div>            
+        </section>
+        <br>
+        <section id="audifonos" class="audifonos">
+            <h1>Audífonos</h1>
+            <div class="audifonos-productos">
+                <div class="producto-card">
+                    <div class="producto-numero">01</div>
+                    <div class="producto-categoria">Audífonos</div>
+                    <div class="producto-imge">
+                        <img src="/dist/img/Productos/audifono1.png" alt="Audífono Inalámbrico">
+                    </div>
+                    <div class="producto-precio">$150.000</div>
+                    <div class="producto-nombre">Audífono Inalámbrico</div>
+                </div>
+    
+                <div class="producto-card">
+                    <div class="producto-numero">02</div>
+                    <div class="producto-categoria">Audífonos</div>
+                    <div class="producto-imge">
+                        <img src="/dist/img/Productos/audifono2.png" alt="Audífono Deportivo">
+                    </div>
+                    <div class="producto-precio">$180.000</div>
+                    <div class="producto-nombre">Audífono Deportivo</div>
+                </div>
+    
+                <div class="producto-card">
+                    <div class="producto-numero">03</div>
+                    <div class="producto-categoria">Audífonos</div>
+                    <div class="producto-imge">
+                        <img src="/dist/img/Productos/audifono3.png" alt="Audífono Bluetooth">
+                    </div>
+                    <div class="producto-precio">$200.000</div>
+                    <div class="producto-nombre">Audífono Bluetooth</div>
+                </div>
+    
+                <div class="producto-card">
+                    <div class="producto-numero">04</div>
+                    <div class="producto-categoria">Audífonos</div>
+                    <div class="producto-imge">
+                        <img src="/dist/img/Productos/audifono4.png" alt="Audífono de Estudio">
+                    </div>
+                    <div class="producto-precio">$250.000</div>
+                    <div class="producto-nombre">Audífono de Estudio</div>
+                </div>
+            </div>            
+        </section>
+        <br>
+        <section id="relojes" class="relojes">
+            <h1>Relojes</h1>
+            <div class="relojes-productos">
+                <div class="producto-card">
+                    <div class="producto-numero">01</div>
+                    <div class="producto-categoria">Relojes</div>
+                    <div class="producto-imge">
+                        <img src="/dist/img/Productos/reloj1.png" alt="Reloj Elegante">
+                    </div>
+                    <div class="producto-precio">$500.000</div>
+                    <div class="producto-nombre">Reloj Elegante</div>
+                </div>
+    
+                <div class="producto-card">
+                    <div class="producto-numero">02</div>
+                    <div class="producto-categoria">Relojes</div>
+                    <div class="producto-imge">
+                        <img src="/dist/img/Productos/reloj2.png" alt="Reloj Casual">
+                    </div>
+                    <div class="producto-precio">$520.000</div>
+                    <div class="producto-nombre">Reloj Casual</div>
+                </div>
+    
+                <div class="producto-card">
+                    <div class="producto-numero">03</div>
+                    <div class="producto-categoria">Relojes</div>
+                    <div class="producto-imge">
+                        <img src="/dist/img/Productos/reloj3.png" alt="Reloj Deportivo">
+                    </div>
+                    <div class="producto-precio">$530.000</div>
+                    <div class="producto-nombre">Reloj Deportivo</div>
+                </div>
+    
+                <div class="producto-card">
+                    <div class="producto-numero">04</div>
+                    <div class="producto-categoria">Relojes</div>
+                    <div class="producto-imge">
+                        <img src="/dist/img/Productos/reloj4.png" alt="Reloj Moderno">
+                    </div>
+                    <div class="producto-precio">$550.000</div>
+                    <div class="producto-nombre">Reloj Moderno</div>
+                </div>
+            </div>            
+        </section>
+        <br>
+        <section id="contacto" class="contacto">
+            <h1>Contáctanos</h1>
+            <form action="#" method="post" class="contacto-formulario">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
         </section>
     </main>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Tienda en Línea. Todos los derechos reservados.</p>
-    </footer>
-
-    <script src=""></script>
-    <script src=""></script>
+    <script src="/src/client/js/main.js"></script>
+    <script src="/src/client/js/carrito.js"></script>
 </body>
 
 </html>
