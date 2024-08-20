@@ -7,12 +7,11 @@
     <title>Tienda en Línea</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="./dist/img/iconos/css/fontello.css" />
-    <link rel="stylesheet" href="./src/client/css/nav.css" />
-    <link rel="stylesheet" href="./src/client/css/styles.css" />
-    <link rel="stylesheet" href="./src/client/css/contac.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" />
+    <link rel="stylesheet" href="/dist/img/iconos/css/fontello.css" />
+    <link rel="stylesheet" href="/src/client/css/nav.css" />
+    <link rel="stylesheet" href="/src/client/css/styles.css" />
+    <link rel="stylesheet" href="/src/client/css/contac.css">
 </head>
 
 <body>
@@ -21,11 +20,11 @@
         <nav class="nav-principal">
 
             <div class="logo">
-                <h3>VentasOnline</h3>
-            </div>
-           
-            </div>
+                <a href=""><h2>VentasOnline</h2></a>
+            </div>          
+            
             <div class="nav-icons">
+
                 <div class="carrito">
                     <a href="#compra"><i class="icon-basket"></i></a>
                     <div class="carrito-vista-previa">
@@ -34,40 +33,86 @@
                 </div>
 
                 <div class="login">
-                    <a href="/html/login.html"><i class="icon-user"></i></a>
+                    <a href="/src/client/html/login.html"><i class="icon-user"></i></a>
                 </div>
+
             </div>
 
         </nav>
-    </header>
-
-    <!-- Segunda Barra de Navegación -->
-
-    <div class="nav-secundaria">
-        <nav>
-            <ul class="nav-categorias">
-                <li>
-                    <a href="#categoria1"><i class="">Ropa</i></a>
-                </li>
-                <li>
-                    <a href="#categoria2"><i class=""></i>Zapatos</a>
-                </li>
-                <li>
-                    <a href="#categoria3"><i class="">Audifonos</i></a>
-                </li>
-                <li>
-                    <a href="#categoria4"><i class="">Relojes</i></a>
-                </li>
-            </ul>
-        </nav>
-    </div>
+    </header>    
         <!-- Sección Principal -->
     <main>
         <!--Seccion de destacados-->
         <section id="Ofertas-productos" class="Ofertas-productos">
+            <img src="/dist/img/Banner/img1.jpg" alt="Ropa">            
+            <img src="/dist/img/Banner/img3.jpg" alt="Zapatos">
+            <img src="/dist/img/Banner/img4.jpg" alt="Audifonos">
+            <img src="/dist/img/Banner/img2.jpg" alt="Relojes">
+            <img src="/dist/img/Banner/img5.jpg" alt="Contacto">
+           
+        </section>
+        
+        <section class="selector">                  
+            <ul class="selector">
+                <li>
+                    <a href="#categoria1"><img src="/dist/img/iconos/img/png/001-reloj-de-mano.png" alt="">Ropa</a>
+                </li>
+                <li>
+                    <a href="#categoria2"><img src="/dist/img/iconos/img/png/001-reloj-de-mano.png" alt="">Zapatos</a>
+                </li>
+                <li>
+                    <a href="#categoria3"><img src="/dist/img/iconos/img/png/001-reloj-de-mano.png" alt="">Audifonos</a>
+                </li>
+                <li>
+                    <a href="#categoria4"><img src="/dist/img/iconos/img/png/001-reloj-de-mano.png" alt="">Relojes</a>
+                </li>
+            </ul>              
+        </section>
+
+        <section id="zapatos" class="zapatos">
+
+            <div class="producto-card">
+                <div class="producto-numero">01</div>
+                <div class="producto-categoria">Sneakers</div>
+                <div class="producto-imge">
+                    <img src="/dist/img/Productos/zapato 1.png" alt="Nike Blue">
+                </div>
+                <div class="product-price">$400.000</div>
+                <div class="product-name">Nike Blue</div>
+            </div>
+
+            <div class="producto-card">
+                <div class="producto-numero">01</div>
+                <div class="producto-categoria">Sneakers</div>
+                <div class="producto-imge">
+                    <img src="/dist/img/Productos/zapato 1.png" alt="Nike Blue">
+                </div>
+                <div class="product-price">$400.000</div>
+                <div class="product-name">Nike Blue</div>
+            </div>
+
+            <div class="producto-card">
+                <div class="producto-numero">01</div>
+                <div class="producto-categoria">Sneakers</div>
+                <div class="producto-imge">
+                    <img src="/dist/img/Productos/zapato 1.png" alt="Nike Blue">
+                </div>
+                <div class="product-price">$400.000</div>
+                <div class="product-name">Nike Blue</div>
+            </div>
+
+            <div class="producto-card">
+                <div class="producto-numero">01</div>
+                <div class="producto-categoria">Sneakers</div>
+                <div class="producto-imge">
+                    <img src="/dist/img/Productos/zapato 1.png" alt="Nike Blue">
+                </div>
+                <div class="producto-price">$400.000</div>
+                <div class="producto-name">Nike Blue</div>
+            </div>
             
         </section>
-       
+        
         <!--Contacto-->
         <section>
             <div class="contact-container">
@@ -95,8 +140,8 @@
         <p>&copy; 2024 Tienda en Línea. Todos los derechos reservados.</p>
     </footer>
 
-    <script src="/src/client/js/scripts.js"></script>
-    <script src="/src/client/js/GenerarURL.js"></script>
+    <script src=""></script>
+    <script src=""></script>
 </body>
 
 </html>

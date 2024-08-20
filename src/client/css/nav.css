@@ -1,152 +1,142 @@
-
-header {
-    background-color: #333;
-    color: white;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    padding: 1em 0;
-}
-
+/* General styles */
 .nav-principal {
+    position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 1em;
+    margin-bottom: 10px;
+    background: #232323;
+    color: #cdcdcd;
+    padding: 20px;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+.nav-principal a {
+    text-decoration: none;
+    color: #cdcdcd;
+    transition: color 0.3s ease;
+}
+
+.nav-icons a:hover {
+    color: #00C6A7;
+}
+
+.logo {    
+    line-height: 0;
+    margin-right: auto;
+    font-size: 25px;  
 }
 
 .logo img {
-    width: 50px;
-    height: auto;
-}
-
-.nav-links {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.nav-links li {
-    margin: 0 1em;
-}
-
-.nav-links li a {
-    color: white;
-    text-decoration: none;
-}
-
-.search-bar {
-    display: flex;
-    align-items: center;
-}
-
-.search-bar input {
-    padding: 0.6em;
-    padding-left: 50px;
-    padding-right: 50px;
-    border: none;
-    border-radius: 4px 0 0 4px;
-}
-
-.search-bar::placeholder{
-    width: 500px;
-    padding: 0;
-    
-}
-
-.search-bar button {
-    padding: 0.5em;
-    border: none;
-    background-color: #555;
-    border-radius: 0 4px 4px 0;
-    cursor: pointer;
-}
-
-.search-bar button{
-    font-size: 17px;   
-    color: white;
+    max-height: 40px;
+    max-width: 100px;
 }
 
 .nav-icons {
+    display: flex;    
+    justify-content: flex-end;
+    font-size: 30px;
+}
+
+.nav-icons ul {
     display: flex;
-    align-items: center;
+    padding: 0;
 }
 
-.nav-icons .carrito, .nav-icons .login {
-    margin-left: 4em;    
-   
+.nav-icons li {
+    list-style: none;
+    padding: 0 20px;
 }
 
-.nav-icons i{
-    font-size: 25px;
-    color: white;
+/* Estilo general para la sección del carrito */
+.nav-icons .carrito {
+    position: relative;
+    display: inline-block;
+    padding-right: 20px;
 }
 
-.carrito-vista-previa {
+/* Ocultar la vista previa del carrito por defecto */
+.nav-icons .carrito .carrito-vista-previa {
     display: none;
     position: absolute;
+    top: 100%;
     right: 0;
-    top: 40px;
-    background-color: white;
+    background-color: #fff;
+    padding: 10px;
     border: 1px solid #ccc;
-    padding: 1em;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
     width: 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 10;
 }
 
-.carrito:hover .carrito-vista-previa {
+/* Mostrar la vista previa del carrito al pasar el mouse sobre el carrito */
+.nav-icons .carrito:hover .carrito-vista-previa {
     display: block;
 }
 
-/* Diseño responsivo */
-@media (max-width: 768px) {
-    .nav-principal {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .nav-icons {
-        margin-top: 1em;
-    }
-
-    .search-bar {
-        width: 100%;
-        margin-bottom: 1em;
-    }
-
-    .search-bar input {
-        width: calc(100% - 100px);
-    }
-
-    .nav-icons .carrito, .nav-icons .login {
-        margin-left: 1em;    
-    }
+/* Estilo del texto dentro de la vista previa del carrito */
+.nav-icons .carrito .carrito-vista-previa p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
 }
 
-@media (max-width: 480px) {
+/* Mobile styles (pantallas menores de 768px) */
+@media only screen and (max-width: 767px) { 
     .nav-principal {
-        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px;
     }
-
-    .nav-links {
-        flex-direction: column;
-        width: 100%;
-        margin-top: 1em;
-    }
-
-    .nav-links li {
-        margin: 0.5em 0;
-    }
-
-    .search-bar input {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .nav-icons i {
+    
+    .logo{
         font-size: 20px;
+    }
+
+    .logo img {
+        max-height: 30px;
+        max-width: 80px;
+    }
+  
+    .nav-icons {
+        width: auto;
+        justify-content: flex-end;
+        font-size: 20px;
+    }
+
+    /* Ocultar la vista previa del carrito en móviles */
+    .nav-icons .carrito .carrito-vista-previa {
+        display: none !important;
+    }
+
+    .nav-icons ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 50px;
+        background: #232323;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-principal input {
+        display: block;
+        width: 30px;
+        height: 30px;
+        background: none;
+        border: none;
+        color: #cdcdcd;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .nav-principal input:checked ~ .nav-icons ul {
+        display: flex;
+    }
+  
+    .nav-icons li {
+        padding: 10px 0;
+        width: 100%;
     }
 }
