@@ -2,21 +2,20 @@ body {
     font-family: "Nunito", sans-serif;      
     font-style: normal;
     margin: 0;
-    padding: 0;  
-    background-color: #9ea68f;  
+    padding: 0;       
 }
 .contacto {
     max-width: 500px;
     margin: 2rem auto;
     padding: 1.5rem;
-    background-color:#0a0b17;
+    background-color:#1b303b;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
 
 h1 {
     text-align: center;
-    color: #9ea68f;
+    color: #e6eef2;
 }
 
 .contacto-formulario {
@@ -26,7 +25,7 @@ h1 {
 
 .contacto-formulario label {
     margin: 10px;
-    color: #9ea68f;
+    color: #e6eef2;
 }
 
 .contacto-formulario input,
@@ -36,14 +35,14 @@ h1 {
     border: 1px solid #ddd;
     border-radius: 4px;
     font-size: 1rem;
-    background-color:#9ea68f;
+    background-color:#e6eef2;
 }
 
 .contacto-formulario button {
     margin-top: 10px;   
     padding: 0.8rem;
-    background-color: #9ea68f;
-    color: #0a0b17;
+    background-color: #e6eef2;
+    color: #1b303b;
     border: 20px;
     border-radius: 4px;
     font-family: "Nunito", sans-serif;
@@ -52,5 +51,5 @@ h1 {
 }
 
 .contacto-formulario button:hover {
-    background-color:#b6c0a4;
+    background-color:#e6eef2;
 }

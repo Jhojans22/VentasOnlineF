@@ -9,100 +9,71 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="/dist/img/iconos/css/fontello.css" />
-    <link rel="stylesheet" href="/dist/ext/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/src/client/css/nav.css" />
     <link rel="stylesheet" href="/src/client/css/StyleProducto.css" />
   </head>
 
   <body>
+    <!-- Primera Barra de Navegación Fija -->
     <header>
       <nav class="nav-principal">
-        <div class="logo">
-          <h3>VentasOnlineF</h3>
-        </div>
-        <div class="search-bar">
-          <input
-            type="text"
-            placeholder="Buscar productos por nombre, código o categoría..."
-          />
-          <button type="submit">
-            <i class="icon-search"></i>
-          </button>
-        </div>
-        <div class="nav-icons">
-          <div class="carrito">
-            <a href="#compra"><i class="icon-basket"></i></a>
-            <div class="carrito-vista-previa">
-              <p>Tu carrito está vacío.</p>
-            </div>
+          <div class="logo">
+              <a href="/src/client/index.html"><h2>VentasOnline</h2></a>
+          </div> 
+          <div class="nav-icons">
+              <div class="carrito">
+                  <a href="#compra"><i class="icon-basket"></i></a>
+                  <div class="carrito-vista-previa">
+                      <p>Tu carrito está vacío.</p>
+                  </div>
+              </div>
+              <div class="login">
+                  <a href="/src/client/html/login.html"><i class="icon-user"></i></a>
+              </div>
           </div>
-          <div class="login">
-            <a href="/src/client/html/login.html"><i class="icon-user"></i></a>
-          </div>
-        </div>
       </nav>
-    </header>
+  </header>    
     <!-- Contenido Principal -->
     <main>
-      <section class="product-detail">
-        <div class="product-header">
-          <div class="breadcrumbs">
-            <a href="#">Videojuegos</a> / <a href="#">Juegos</a>
-          </div>
-          <h1 id="product-title">Minecraft PC</h1>
-          <span id="product-code" class="product-code">0000000</span>
-          <div id="product-rating" class="product-rating">
-            <span>⭐⭐⭐⭐☆</span>
-            <a href="#">43 Pulgadas</a>
-            <a href="#">Comparar producto</a>
-          </div>
-        </div>
-
-        <div class="product-body">
-          <div class="product-images">
-            <img
-              id="product-main-image"
-              src=""
-              alt="Producto Principal"
-            />
-            <div class="product-thumbnails">
-              <img id="thumb1" src="thumb1.jpg" alt="Thumb 1" />
-              <img id="thumb2" src="thumb2.jpg" alt="Thumb 2" />
-              <img id="thumb3" src="thumb3.jpg" alt="Thumb 3" />
-              <!-- Más thumbnails -->
+      <section id="producto-detalle" class="producto-detalle">
+        <div class="producto-imagenes">
+            <div class="imagenes-secundarias">
+                <img src="/dist/img/Productos/zapato 1.png" alt="Vista lateral">
+                <img src="/path-to-image2.jpg" alt="Vista trasera">
+                <img src="/path-to-image3.jpg" alt="Vista superior">
+                <img src="/path-to-image4.jpg" alt="Vista inferior">
+                <img src="/path-to-image5.jpg" alt="Vista frontal">
             </div>
-          </div>
-
-          <div class="product-info">
-            <div class="product-pricing">
-              <span id="product-price" class="product-price">$19.99</span>
-              <span id="product-old-price" class="product-old-price"
-                >$49.99</span
-              >
-              <button id="add-to-cart">Agregar al carrito</button>
+            <div class="imagen-principal">
+                <img src="/dist/img/Productos/zapato 1.png" alt="Producto principal">
             </div>
-            <ul id="product-features" class="product-features">
-              <li>
-                CREA Crea lo que sea que puedas imaginar en tu propio mundo
-                infinito que es único cada vez que lo juegues.
-              </li>
-              <br />
-              <li>EXPLORA Descubre biomas, recursos y criaturas...</li>
-              <br />
-              <li>JUEGA EN COMPAÑÍA Diviértete con amigos...</li>
-            </ul>
-          </div>
         </div>
-      </section>
+        <div class="producto-info">
+            <h1 id="producto-nombre">Nombre del Producto</h1>
+            <br>
+            <span id="producto-precio"><del>$199.99</del></span>
+            <span id="producto-precio">$99.99</span>            
+            <div class="seleccion-talla">
+                <h2>Selecciona tu talla</h2>
+                <div class="tallas">
+                    <button>EU 38</button>
+                    <button>EU 39</button>
+                    <button>EU 40</button>
+                    <button>EU 41</button>
+                    <button>EU 42</button>
+                    <button>EU 43</button>
+                    <button>EU 44</button>
+                    <button>EU 45</button>                    
+                    <!-- Más tallas -->
+                </div>
+            </div>
+            <button class="btn-agregar">Añadir a la cesta</button>
+            <button class="btn-favorito">Favorito</button>
+            <p class="producto-descuento">Este producto queda excluido de las promociones y descuentos del sitio web.</p>
+        </div>
+    </section>
     </main>
-
-    <footer>
-      <p>&copy; 2024 Tienda de Electrónica. Todos los derechos reservados.</p>
-    </footer>
-
-    <script src="/dist/ext/bootstrap/js/jquery.js"></script>
-    <script src="/dist/ext/bootstrap/js/bootstrap.min.js"></script>
-    <script src="/src/client/js/scripts.js"></script>
-    <script src="/src/client/js/CambiodeP.js"></script>
+  
+   <script src="/src/client/js/Producto.js"></script>
   </body>
 </html>

@@ -4,7 +4,7 @@ body {
     font-style: normal;
     margin: 0;
     padding: 0;  
-    background-color: #9ea68f;  
+    background-color: #e6eef2;  
 }
 /*Banner*/
 .Ofertas-productos {
@@ -22,7 +22,7 @@ body {
     transition: width 0.5s;
     overflow: hidden;
     cursor: pointer;
-    background-color: #0a0b17;
+    background-color: #e6eef2;
     border-radius: 20px;  
 
 }
@@ -39,13 +39,19 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #9ea68f;
+    color:  #e6eef2;    
+    text-shadow:
+        0.5px 0.5px 0 #000,
+        -0.5px 0.5px 0 #000,
+        -0.5px -0.5px 0 #000,
+        0.5px -0.5px 0 #000;
     text-align: center;
-    opacity: 0;
-    transition: opacity 0.5s;
+    opacity: 1;
+    transition: opacity 0.5s, backgraund-color 0.5s;
     padding: 20px 0;
     font-size: 20px;   
-    border-radius: 10px;
+    border-radius: 10px;    
+    
 }
 
 .Ofertas-productos .producto:hover img {    
@@ -54,7 +60,14 @@ body {
 }
 
 .Ofertas-productos .producto:hover .overlay {
-    opacity: 1;
+    opacity: 0.7;   
+    background: radial-gradient(#00000042, #000000);
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .Ofertas-productos .producto {
@@ -65,12 +78,12 @@ body {
 
 /*Secciones */
 .ropa,.zapatos, .audifonos, .relojes {    
-    background-color:#0a0b17;
+    background-color:#1b303b;
     padding: 5px;
 }
 
 .ropa, .zapatos, .audifonos, .relojes, h1 {
-    color: #9ea68f;
+    color: #e6eef2;
     font-size: 50px;
     padding: 10px;
     margin: 2px;
@@ -86,13 +99,13 @@ body {
 
 /*Producto*/
 .producto-card {
-    background-color: #9ea68f;
+    background-color: #e6eef2;
     border-radius: 15px;
     padding: 20px;
     width: 200px;
     text-align: center;
     position: relative;
-    color: #0a0b17;
+    color: #1b303b;
     box-shadow: 0 10px 20px#ffffff1f;
     transition: transform 0.3s ease;
 }
@@ -107,7 +120,7 @@ body {
     position: absolute;
     top: 10px;
     left: 10px;
-    color:  #0a0b17;
+    color:  #1b303b;
     opacity: 0.1;
 }
 
@@ -116,7 +129,7 @@ body {
     text-transform: uppercase;
     margin-bottom: 15px;
     font-weight: bold;
-    color: #0a0b17;
+    color:#1b303b;
 }
 
 .producto-imge img {
@@ -133,7 +146,7 @@ body {
 
 .producto-precio {
     font-size: 18px;
-    background-color: #0a0b17;
+    background-color: #1b303b;
     padding: 5px 10px;
     border-radius: 15px;
     position: absolute;
@@ -150,32 +163,199 @@ body {
 
 
 footer {
-    background-color: #0a0b17;
-    color: #9ea68f;
+    background-color: #1b303b;
+    color: #e6eef2;
     text-align: center;
     padding: 1em 0;
 }
 
-/* Diseño responsivo */
-@media only screen and (max-width: 768px) {
-    .selector {
+footer {
+    background-color: #1b303b;
+    color: #e6eef2;
+    padding: 40px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 220px;
+}
+
+.footer-column h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #e6eef2;
+}
+
+.footer-column p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #e6eef2;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #e6eef2;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #7289a7;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #7289a7;
+    margin-top: 40px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+    color: #e6eef2;
+}
+
+/* Ajustes para pantallas medianas */
+@media (max-width: 1200px) {
+    .Ofertas-productos {
+        margin: 20px auto;
+        width: 90%;
+        height: 500px;
         flex-direction: column;
     }
 
-    .selector ul {
-        flex-direction: column;
-    }
-
-    .selector ul li {
+    .Ofertas-productos .producto {
+        width: 100%;
+        height: auto;
         margin-bottom: 20px;
     }
 
-    .selector ul li a {
-        padding: 15px;
-        font-size: 16px;
+    .ropa, .zapatos, .audifonos, .relojes, h1 {
+        font-size: 40px;
     }
 
-    .selector ul li a img {
-        max-width: 40px;
+    .producto-card {
+        width: 150px;
+        padding: 15px;
+    }
+
+    .producto-numero {
+        font-size: 20px;
+    }
+
+    .producto-precio {
+        font-size: 16px;
+        padding: 3px 8px;
+    }
+}
+
+/* Ajustes para pantallas pequeñas (tabletas y dispositivos móviles) */
+@media (max-width: 768px) {
+    .Ofertas-productos {
+        height: auto;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .ropa, .zapatos, .audifonos, .relojes, h1 {
+        font-size: 30px;
+        padding: 5px;
+    }
+
+    .ropa-productos, .zapatos-productos, .audifonos-productos, .relojes-productos {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .producto-card {
+        width: 100%;
+        padding: 15px;
+        box-shadow: none;
+        border: 1px solid #1b303b;
+    }
+
+    .producto-imge img {
+        max-width: 120px;
+    }
+
+    .producto-precio {
+        font-size: 14px;
+        padding: 2px 6px;
+    }
+}
+
+/* Ajustes para pantallas extra pequeñas (teléfonos móviles) */
+@media (max-width: 480px) {
+    .Ofertas-productos {
+        margin: 10px auto;
+        width: 100%;
+        height: auto;
+    }
+
+    .Ofertas-productos .producto {
+        width: 100%;
+        height: 200px;
+    }
+
+    .ropa, .zapatos, .audifonos, .relojes, h1 {
+        font-size: 24px;
+        padding: 2px;
+        margin: 0;
+    }
+
+    .producto-card {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    .producto-imge img {
+        max-width: 100px;
+        margin-bottom: 5px;
+    }
+
+    .producto-precio {
+        font-size: 12px;
+        padding: 2px 5px;
+        right: 5px;
+    }
+
+    .producto-nombre {
+        font-size: 14px;
     }
 }

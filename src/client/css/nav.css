@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-    background: #232323;
+    background: #1b303b;
     color: #cdcdcd;
     padding: 20px;
     z-index: 1;
@@ -13,7 +13,7 @@
 
 .nav-principal a {
     text-decoration: none;
-    color: #cdcdcd;
+    color: #e6eef2;
     transition: color 0.3s ease;
 }
 
